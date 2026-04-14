@@ -1,5 +1,5 @@
 Title: FastAPI Basics: My First GET & POST API
-Date: 2026-04-15
+Date: 2026-04-15 10:00
 Category: GenAI
 Score: 10
 
@@ -29,4 +29,4 @@ def home():
 
 @app.post("/user")
 def create_user(user: User):
-    return {"status": "success", "user": user}
+    return {"status": "success", "user": user} 

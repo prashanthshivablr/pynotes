@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>My Python Notes - GenAI</title><link href="/" rel="alternate"/><link href="/feeds/genai.atom.xml" rel="self"/><id>/</id><updated>2026-04-15T00:00:00-04:00</updated><entry><title>FastAPI Basics: My First GET &amp; POST API</title><link href="/fastapi-basics-my-first-get-post-api.html" rel="alternate"/><published>2026-04-15T00:00:00-04:00</published><updated>2026-04-15T00:00:00-04:00</updated><author><name>Prashanth</name></author><id>tag:None,2026-04-15:/fastapi-basics-my-first-get-post-api.html</id><summary type="html">&lt;p&gt;Today I built my first backend API using FastAPI.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>My Python Notes - GenAI</title><link href="/" rel="alternate"/><link href="/feeds/genai.atom.xml" rel="self"/><id>/</id><updated>2026-04-15T10:00:00-04:00</updated><entry><title>FastAPI Basics: My First GET &amp; POST API</title><link href="/fastapi-basics-my-first-get-post-api.html" rel="alternate"/><published>2026-04-15T10:00:00-04:00</published><updated>2026-04-15T10:00:00-04:00</updated><author><name>Prashanth</name></author><id>tag:None,2026-04-15:/fastapi-basics-my-first-get-post-api.html</id><summary type="html">&lt;p&gt;Today I built my first backend API using FastAPI.&lt;/p&gt;
 &lt;h2&gt;What I learned&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Creating GET endpoints&lt;/li&gt;
@@ -37,4 +37,29 @@ def home():
     return {"message": "FastAPI is running successfully"}&lt;/p&gt;
 &lt;p&gt;@app.post("/user")
 def create_user(user: User):
-    return {"status": "success", "user": user}&lt;/p&gt;</content><category term="GenAI"/></entry></feed>
+    return {"status": "success", "user": user} &lt;/p&gt;</content><category term="GenAI"/></entry><entry><title>Age Calculator</title><link href="/age-calculator.html" rel="alternate"/><published>2026-04-04T00:00:00-04:00</published><updated>2026-04-04T00:00:00-04:00</updated><author><name>Prashanth</name></author><id>tag:None,2026-04-04:/age-calculator.html</id><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;datetime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;get_age&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;d1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;months&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;d1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;12&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;d1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;month&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;month&lt;/span&gt;
+
+    &lt;span class="n"&gt;year&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;months&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;age&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_age&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1991&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;age&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;33&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Score: 5&lt;/strong&gt;&lt;/p&gt;</content><category term="GenAI"/></entry><entry><title>Hello</title><link href="/hello.html" rel="alternate"/><published>2026-04-04T00:00:00-04:00</published><updated>2026-04-04T00:00:00-04:00</updated><author><name>Prashanth</name></author><id>tag:None,2026-04-04:/hello.html</id><content type="html">&lt;p&gt;```python
+name = input("Enter your name: ")&lt;/p&gt;</content><category term="GenAI"/></entry></feed>

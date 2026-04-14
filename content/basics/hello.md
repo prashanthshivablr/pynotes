@@ -1,23 +1,7 @@
----
-title: Hello
-date: 2026-04-04
-author: Your Name
-cell_count: 2
-score: 0
----
+Title: Hello
+Date: 2026-04-04
+Category: GenAI
+Score: 10
 
 ```python
 name = input("Enter your name: ")
-```
-
-    Enter your name:  Prashanth
-    
-
-
-```python
-
-```
-
-
----
-**Score: 0**
