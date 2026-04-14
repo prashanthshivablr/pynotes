@@ -46,8 +46,50 @@
         
 
             <article>
+                <a href="https://chotur15-oss.github.io/pynotes/fastapi-basics-my-first-get-post-api.html"><h3 class="article-title">FastAPI Basics: My First GET & POST API</h3></a>
+<h6 class="subheader" title="2026-04-15T00:00:00-04:00">Wed 15 April 2026
+</h6>
+
+
+<p>Today I built my first backend API using FastAPI.</p>
+<h2>What I learned</h2>
+<ul>
+<li>Creating GET endpoints</li>
+<li>Creating POST endpoints</li>
+<li>Using Pydantic for validation</li>
+<li>Testing APIs using Swagger UI</li>
+</ul>
+<h2>Code Example</h2>
+<p>```python
+from fastapi import FastAPI
+from pydantic import BaseModel</p>
+<p>app = FastAPI()</p>
+<p>class User(BaseModel):
+    name: str
+    age: int</p>
+<p>@app.get("/")
+def home():
+    return {"message": "FastAPI is running successfully"}</p>
+<p>@app.post("/user")
+def create_user(user: User):
+    return {"status": "success", "user": user}</p><p class="subheader">Category: <a href="https://chotur15-oss.github.io/pynotes/category/genai.html">GenAI</a>
+
+</p>
+
+
+
+            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
                 <a href="https://chotur15-oss.github.io/pynotes/add-a-new-column.html"><h3 class="article-title">Add-A-New-Column</h3></a>
-<h6 class="subheader" title="2026-03-22T00:00:00-04:00">Sun 22 March 2026
+<h6 class="subheader" title="2026-04-04T00:00:00-04:00">Sat 04 April 2026
 </h6>
 
 
@@ -89,112 +131,22 @@
         vertical-align: top;
     }
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>city</th>
-      <th>points</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Toronto</td>
-      <td>80</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Montreal</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Waterloo</td>
-      <td>90</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">code</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">df</span>
-</code></pre></div>
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>city</th>
-      <th>points</th>
-      <th>code</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Toronto</td>
-      <td>80</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Montreal</td>
-      <td>70</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Waterloo</td>
-      <td>90</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 10</strong></p><p class="subheader">Category: <a href="https://chotur15-oss.github.io/pynotes/category/pandas-work.html">pandas-work</a>
+    .dataframe thead th …</style></div><p class="subheader">Category: <a href="https://chotur15-oss.github.io/pynotes/category/pandas-work.html">pandas-work</a>
 
 </p>
 
 
 
-            </article>
-
-
+                <a class="button radius secondary small right" href="https://chotur15-oss.github.io/pynotes/add-a-new-column.html">Read More</a>
                 <hr  class="gradient"/>
-
+            </article>
 
         
 
 
             <article>
                 <a href="https://chotur15-oss.github.io/pynotes/age-calculator.html"><h3 class="article-title">Age-Calculator</h3></a>
-<h6 class="subheader" title="2026-03-22T00:00:00-04:00">Sun 22 March 2026
+<h6 class="subheader" title="2026-04-04T00:00:00-04:00">Sat 04 April 2026
 </h6>
 
 
@@ -237,7 +189,7 @@
 
             <article>
                 <a href="https://chotur15-oss.github.io/pynotes/hello.html"><h3 class="article-title">Hello</h3></a>
-<h6 class="subheader" title="2026-03-22T00:00:00-04:00">Sun 22 March 2026
+<h6 class="subheader" title="2026-04-04T00:00:00-04:00">Sat 04 April 2026
 </h6>
 
 
@@ -285,6 +237,7 @@
         <h5 class="sidebar-title">Categories</h5>
         <ul class="side-nav">
             <li><a href="https://chotur15-oss.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://chotur15-oss.github.io/pynotes/category/genai.html">GenAI</a></li>
             <li><a href="https://chotur15-oss.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
    
         </ul>
