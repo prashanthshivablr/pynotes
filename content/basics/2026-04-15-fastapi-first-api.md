@@ -1,6 +1,7 @@
 Title: FastAPI Basics: My First GET & POST API
 Date: 2026-04-15
 Category: GenAI
+Score: 10
 
 Today I built my first backend API using FastAPI.
 

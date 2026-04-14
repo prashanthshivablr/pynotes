@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>My Python Notes - GenAI</title><link href="/" rel="alternate"/><link href="/feeds/genai.atom.xml" rel="self"/><id>/</id><updated>2026-04-15T00:00:00-04:00</updated><entry><title>FastAPI Basics: My First GET &amp; POST API</title><link href="/fastapi-basics-my-first-get-post-api.html" rel="alternate"/><published>2026-04-15T00:00:00-04:00</published><updated>2026-04-15T00:00:00-04:00</updated><author><name>Prashanth</name></author><id>tag:None,2026-04-15:/fastapi-basics-my-first-get-post-api.html</id><summary type="html">&lt;p&gt;Today I built my first backend API using FastAPI.&lt;/p&gt;
+&lt;h2&gt;What I learned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating GET endpoints&lt;/li&gt;
+&lt;li&gt;Creating POST endpoints&lt;/li&gt;
+&lt;li&gt;Using Pydantic for validation&lt;/li&gt;
+&lt;li&gt;Testing APIs using Swagger UI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Code Example&lt;/h2&gt;
+&lt;p&gt;```python
+from fastapi import FastAPI
+from pydantic import BaseModel&lt;/p&gt;
+&lt;p&gt;app = FastAPI()&lt;/p&gt;
+&lt;p&gt;class User(BaseModel):
+    name: str
+    age: int&lt;/p&gt;
+&lt;p&gt;@app.get("/")
+def …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today I built my first backend API using FastAPI.&lt;/p&gt;
+&lt;h2&gt;What I learned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating GET endpoints&lt;/li&gt;
+&lt;li&gt;Creating POST endpoints&lt;/li&gt;
+&lt;li&gt;Using Pydantic for validation&lt;/li&gt;
+&lt;li&gt;Testing APIs using Swagger UI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Code Example&lt;/h2&gt;
+&lt;p&gt;```python
+from fastapi import FastAPI
+from pydantic import BaseModel&lt;/p&gt;
+&lt;p&gt;app = FastAPI()&lt;/p&gt;
+&lt;p&gt;class User(BaseModel):
+    name: str
+    age: int&lt;/p&gt;
+&lt;p&gt;@app.get("/")
+def home():
+    return {"message": "FastAPI is running successfully"}&lt;/p&gt;
+&lt;p&gt;@app.post("/user")
+def create_user(user: User):
+    return {"status": "success", "user": user}&lt;/p&gt;</content><category term="GenAI"/></entry></feed>
