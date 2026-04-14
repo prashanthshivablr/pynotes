@@ -2,7 +2,7 @@
 
 AUTHOR          = 'Prashanth'  # use your name
 SITENAME        = 'My Python Notes' # use title
-GITHUB_USERNAME = 'chotur15-oss' # use your username
+GITHUB_USERNAME = 'prashanthshivablr' # use your username
 
 
 # Blogroll
